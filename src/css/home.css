@@ -1,0 +1,124 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.containerDiv {
+    width: 500px;
+    height: 500px;
+    background-color: #f1e0d1;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 1.5rem;
+    /* border: none; */
+    color: #000;
+    border: 1px solid white;
+    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+.rightDiv {
+    width: 300px;
+    height: 500px;
+    border-radius: 3px;
+    background-color: #E3BC9A;
+    margin-top: 40px;
+    padding: 10px;
+    font-size: 1.5rem;
+    border: 1px solid gray;
+    color: #000;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+}
+
+#titleName {
+    border-bottom: 1px solid black;
+    color: #000;
+    outline: none;
+    max-width: 200px;
+    /* Adjust as needed */
+    max-height: 100px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: auto;
+}
+
+#desc {
+    width: 500px;
+    height: 390px;
+    outline: none;
+    margin-top: 10px;
+}
+
+.catHeading {
+    margin-top: 20px;
+    cursor: pointer;
+
+
+
+}
+
+.choice {
+    display: none;
+    font-size: 16px;
+}
+
+#catHeading:hover+.choice {
+    display: block;
+}
+
+.prole {
+    color: black;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.labelTitle {
+    font-size: 1.4rem;
+}
+
+.save {
+    height: 20px;
+    width: 100px;
+    margin: 20px;
+    padding: 20px;
+    background-color: steelblue;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+}
+
+.duedate {
+    margin: 20px;
+    height: 30px;
+    width: 200px;
+    padding: 5px;
+    font-size: 1.3rem;
+    outline: none;
+}
+
+#dueDateLabel {
+    margin-top: 10px;
+}
