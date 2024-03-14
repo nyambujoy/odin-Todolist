@@ -28,7 +28,7 @@ body {
     overflow-y: hidden;
     overflow-x: hidden;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 5px;
 
 }
@@ -37,7 +37,7 @@ body {
     width: 300px;
     height: 500px;
     border-radius: 3px;
-    background-color: #E3BC9A;
+    background-color: #f1e0d1;
     margin-top: 40px;
     padding: 10px;
     font-size: 1.5rem;
@@ -84,9 +84,7 @@ body {
     font-size: 16px;
 }
 
-#catHeading:hover+.choice {
-    display: block;
-}
+
 
 .prole {
     color: black;
@@ -100,14 +98,16 @@ body {
 }
 
 .save {
-    height: 20px;
+    height: 30px;
     width: 100px;
     margin: 20px;
-    padding: 20px;
+    padding-bottom: 10px;
     background-color: steelblue;
     border-radius: 5px;
     color: #fff;
     border: none;
+    font-size: 1.3rem;
+    text-align: center;
 }
 
 .duedate {

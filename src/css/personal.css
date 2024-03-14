@@ -1,0 +1,32 @@
+body {
+    /* background-color: #fff; */
+}
+
+.divContainer {
+    width: 60%;
+    height: 100vh;
+    background-color: rgb(228, 232, 235);
+    border: 1px solid white;
+}
+
+.divTitle {
+    margin: 40px;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    background-color: rgb(228, 232, 235);
+}
+
+#inputSearch {
+    height: 50px;
+    width: 300px;
+    padding: 5px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+}
+
+#heading {
+    font-weight: 700;
+    margin: 30px;
+    color: #1b2651;
+}

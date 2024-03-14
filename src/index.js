@@ -1,7 +1,9 @@
 import './css/index.css'
 // import homesvg from './home.svg'
-import { home } from './home.js'
+// import { home } from './home.js'
 import './css/home.css'
+import { personal } from './personal';
+import './css/personal.css'
 
 function createButtons() {
 
@@ -108,33 +110,33 @@ function createButtons() {
     // const imageHome = document.createElement("img")
     // imageHome.src = homeSvg
 
-    const homeSvg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-    homeSvg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
-    homeSvg.setAttribute("viewBox", "0 0 24 24");
-    homeSvg.setAttribute("height", "30px"); // Set height
-    homeSvg.setAttribute("width", "30px"); // 
-    homeSvg.style.marginLeft = "5px";
+    const addSvg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    addSvg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+    addSvg.setAttribute("viewBox", "0 0 24 24");
+    addSvg.setAttribute("height", "30px"); // Set height
+    addSvg.setAttribute("width", "30px"); // 
+    addSvg.style.marginLeft = "5px";
     const svgTitle = document.createElementNS("http://www.w3.org/2000/svg", "title");
-    svgTitle.textContent = "home";
-    homeSvg.appendChild(svgTitle);
+    svgTitle.textContent = "add";
+    addSvg.appendChild(svgTitle);
 
     // Create a path element within the SVG
     const svgPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
-    svgPath.setAttribute("d", "M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z");
-    homeSvg.appendChild(svgPath);
+    svgPath.setAttribute("d", "M20.7,7C21.1,6.6 21.1,6 20.7,5.6L18.4,3.3C18,2.9 17.4,2.9 17,3.3L15.2,5.1L19,8.9M3,17.2V21H6.8L17.8,9.9L14.1,6.1L3,17.2M7,2V5H10V7H7V10H5V7H2V5H5V2H7Z")
+    addSvg.appendChild(svgPath);
 
     // const svgContainer = document.createElement('span');
     // svgContainer.id = "svgContainer"
-    // svgContainer.innerHTML = homesvg
+    // svgContainer.innerHTML = addsvg
 
 
-    const homeBtn = document.createElement("button");
-    homeBtn.innerHTML = "Home"; // Changed text to "Home"
-    homeBtn.classList.add("navBtn");
-    homeBtn.id = "homeBtn";
-    homeBtn.style.display = "flex"; // Use flexbox for layout
-    homeBtn.style.alignItems = "center";
-    homeBtn.append(homeSvg)
+    const addBtn = document.createElement("button");
+    addBtn.innerHTML = "add"; // Changed text to "add"
+    addBtn.classList.add("navBtn");
+    addBtn.id = "addBtn";
+    addBtn.style.display = "flex"; // Use flexbox for layout
+    addBtn.style.alignItems = "center";
+    addBtn.append(addSvg)
 
 
     const searchBtn = document.createElement("button");
@@ -168,22 +170,28 @@ function createButtons() {
     // leftDiv.appendChild(svgContainer);
 
     const navbar = document.querySelector(".navbar");
-    navbar.append(homeBtn, personalBtn, schoolBtn, workBtn, fitnessBtn, searchBtn);
+    navbar.append(addBtn, personalBtn, schoolBtn, workBtn, fitnessBtn, searchBtn);
 
-    return homeBtn, personalBtn, schoolBtn, workBtn, fitnessBtn, searchBtn
+    return addBtn, personalBtn, schoolBtn, workBtn, fitnessBtn, searchBtn
 }
 
 createButtons();
 
-const homeBtn = document.querySelector("#homeBtn")
-console.log(homeBtn)
+const addBtn = document.querySelector("#addBtn")
+console.log(addBtn)
 
-homeBtn.addEventListener("click", () => {
+// addBtn.addEventListener("click", () => {
+//     // console.log("hey")
+
+
+
+//     home()
+// })
+const personalBtn = document.querySelector("#personalBtn")
+personalBtn.addEventListener("click", () => {
     console.log("hey")
 
-
-
-    home()
+    personal()
 })
 
 

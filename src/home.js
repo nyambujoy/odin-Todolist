@@ -146,11 +146,17 @@ function saveTask() {
     // Here, you can do whatever you want with the task object, such as adding it to a list, storing it in localStorage, etc.
     console.log(task); // For demonstration purposes, we are just logging the task object
 
+
+
     document.getElementById('titleName').innerText = '';
     document.getElementById('desc').innerText = '';
     // document.querySelector('input[name="priority"]:checked').checked;
     document.getElementById('taskManager').selectedIndex = 0;
     document.querySelector('.duedate').value = '';
+
+    const tasksString = localStorage.getItem('tasks');
+    const tasks = tasksString ? JSON.parse(tasksString) : [];
+    return tasks;
 
 
 }
@@ -171,5 +177,5 @@ function saveTask() {
 
 
 
-
+export { Task, saveTask }
 export { home }
